@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Vue</title>
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <style>
+        .box{
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            background: #ddd;
+            margin:20px;
+            display:inline-block;
+        }
+        body{
+            background: #fff;
+            max-width: 960px;
+            margin: 20px auto;
+        }
+        p,h3,ul{
+            margin:0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+            background: #fff;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li.fav{
+            background: #ff9ed2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>welcome to vue</h1>
+
+    <div id="app">
+        <h2>title: {{title}}, author: {{author}}, age = {{age}} </h2>
+        <button type="submit" v-on:click="age++">increase age</button>
+        <button type="submit" @click="age--">decrease age</button>
+
+        <div @click="changeTitle">click to change title</div>
+
+        <div @click="changeAuthor('newauthor')">change author</div>
+
+
+        <div v-if="showBooks">
+            <h2>title: {{title}}, author: {{author}}, age = {{age}} </h2>
+        </div>
+        <button @click="toggleShowBooks">
+            <span v-if="showBooks">hide books</span>
+            <span v-else>show books</span>
+        </button>
+        <p v-show="showBooks">currently showing book</p>
+
+        <hr>
+        <ul>
+            <h3>show favorited books</h3>
+            <li v-for="book in filteredBooks" :class="{fav: book.isFav}">
+                <h3>{{book.title}} by </h3> 
+                <p>{{book.author}}</p>
+            </li>
+        </ul>
+        
+        <hr>
+         
+        <ul>
+            <li v-for="book in books" :class="{fav: book.isFav}" @click="toggleFav(book)" >
+                <h3>{{book.title}} by </h3> 
+                <p>{{book.author}}</p>
+            </li>
+        </ul>
+
+  
+        <p>go to Vue site <a v-bind:href="url"></a></p>
+        <p>go to Vue site <a :href="url"></a></p>
+        <hr>
+        <div class="box" @mouseover="handleEvent($event,5)">mouse over</div>
+        <div class="box" @mouseleave="handleEvent">mouse leave</div>
+        <div class="box" @dblclick="handleEvent">double click</div>
+        <div class="box" @mousemove="handleMouseMove">position x-{{ x }} y-{{ y }}</div>
+        <div class="p-100px w-400px text-center bg-gray-400 m-20px d-inline"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

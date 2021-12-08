@@ -1,0 +1,28 @@
+{
+    "posts":[
+        { 
+            "title":"welcome to mas", 
+            "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur minima labore doloribus voluptates impedit suscipit dolore officiis, facere quia iure et optio quos. Ullam, ipsam, dignissimos nihil vel eligendi aperiam deleniti excepturi assumenda, delectus maxime exercitationem corporis animi nesciunt saepe! Magnam in at deserunt quis consectetur soluta, possimus necessitatibus tenetur dolore nisi! Maxime eos rerum aliquam et sed inventore architecto quis quibusdam, repudiandae earum, quod non, modi voluptatem sequi quia odio delectus vitae voluptatibus velit eius corporis soluta! At sequi id hic et aspernatur sint facere cumque nemo eaque numquam voluptatem ipsum labore nulla obcaecati nisi incidunt, ab ea molestias a libero quibusdam ut fugiat. Animi tempora magnam, itaque dolore eveniet suscipit aliquam dicta nisi deserunt consequuntur, voluptatem necessitatibus? Suscipit nesciunt dolor odit accusamus aspernatur voluptatem molestiae quasi voluptatibus quibusdam corporis similique delectus earum minima dignissimos, animi impedit unde. Voluptate unde cupiditate harum, est provident inventore sit corrupti molestiae ab?",
+            "id":"1",
+            "tags": [
+                "python",
+                "six",
+                "dolor",
+                "animi"
+            ]
+
+        },
+        { 
+            "title":"welcome to lupiter", 
+            "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur minima labore doloribus voluptates impedit suscipit dolore officiis, facere quia iure et optio quos. Ullam, ipsam, dignissimos nihil vel eligendi aperiam deleniti excepturi assumenda, delectus maxime exercitationem corporis animi nesciunt saepe! Magnam in at deserunt quis consectetur soluta, possimus necessitatibus tenetur dolore nisi! Maxime eos rerum aliquam et sed inventore architecto quis quibusdam, repudiandae earum, quod non, modi voluptatem sequi quia odio delectus vitae voluptatibus velit eius corporis soluta! At sequi id hic et aspernatur sint facere cumque nemo eaque numquam voluptatem ipsum labore nulla obcaecati nisi incidunt, ab ea molestias a libero quibusdam ut fugiat. Animi tempora magnam, itaque dolore eveniet suscipit aliquam dicta nisi deserunt consequuntur, voluptatem necessitatibus? Suscipit nesciunt dolor odit accusamus aspernatur voluptatem molestiae quasi voluptatibus quibusdam corporis similique delectus earum minima dignissimos, animi impedit unde. Voluptate unde cupiditate harum, est provident inventore sit corrupti molestiae ab?",
+            "id":"2",
+            "tags": [
+                "animi",
+                "oream",
+                "sotor",
+                "six"
+            ]
+        }
+      
+    ]
+}
